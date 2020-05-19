@@ -1,0 +1,22 @@
+
+<div>
+<table id="transaction" class="transaction">
+    <tr>
+      <th>Transaction Account</th>
+      <th>Transaction Amount</th>
+      <th>Transaction Date</th>
+      <th>Transaction Description</th>
+      <th>Transaction ID</th>
+      <th>Transaction Type</th>
+    </tr>
+    <tr  *ngFor="let t of transactionType">
+      <td>{{t.transactionAccount}}</td>
+      <td>{{t.transactionAmount}}</td>
+      <td>{{t.transactionDate}}</td>
+      <td>{{t.transactionDescription}}</td>
+      <td>{{t.transactionId}}</td>
+      <td>{{t.transactionType}}</td>
+    </tr>
+    
+  </table>
+</div>

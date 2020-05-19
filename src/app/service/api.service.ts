@@ -12,12 +12,12 @@ export class ApiService {
 
     //Service to reterive the Transactions based on Transaction account .
     getTransactionType(transactionType) {
-        return this.http.get("http://localhost:8083/apis/transactions?transactionAccount="+transactionType, { responseType: 'text' as 'json' });
+        return this.http.get("http://localhost:8081/apis/transactions?transactionAccount="+transactionType, { responseType: 'text' as 'json' });
     }
 
     //Function to get all the Payment and saving Transaction.
     public allTransactionList() {
-          return this.http.get("http://localhost:8083/apis/transactions", { responseType: 'text' as 'json' })
+          return this.http.get("http://localhost:8081/apis/transactions", { responseType: 'text' as 'json' })
     }
 
     errorHandler(error: HttpErrorResponse) {
